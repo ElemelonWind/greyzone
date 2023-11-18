@@ -3,7 +3,7 @@ import Address from '@/components/Address';
 import Loading from '@/components/Loading';
 
 export default function Info() {
-    const [address, setAddress] = useState('3013 Jeannie Anna Court, Herndon, VA 20171-4071, USA');
+    const [address, setAddress] = useState('');
     const [voterData, setVoterData] = useState([]);
 
     useEffect(() => {
