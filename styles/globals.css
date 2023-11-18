@@ -39,7 +39,7 @@ html{
     top: 0;
     left: 0;
     z-index: 999;
-    padding: 1rem;
+    padding: 0.1rem;
     display: inline;
 }
 
@@ -227,4 +227,8 @@ a:hover, a:active {
 
 .absolute {
     display: block;
+}
+
+.message-background {
+    background-color: #6E778A;
 }

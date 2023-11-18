@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Chat() {
     const [inputValue, setInputValue] = useState('');
     const [chatLog, setChatLog] = useState([
-        { type: 'bot', message: 'Hi, I\'m Olive, your One-Vote chat assistant. How can I help you?'}
+        { type: 'bot', message: 'Hi, I\'m Olive, your One-Vote chat assistant. How can I help you?'},
     ]);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -48,8 +48,8 @@ export default function Chat() {
             message.type === 'user' ? 'justify-end' : 'justify-start'
             }`}>
             <div className={`${
-            message.type === 'user' ? 'bg-purple-500' : 'bg-gray-800'
-            } rounded-lg p-4 text-white max-w-sm`}>
+            message.type === 'user' ? 'message-background' : 'bg-gray-800'
+            } rounded-lg p-4 my-2 text-white max-w-sm`}>
             {message.message}
             </div>
         </div>
@@ -67,7 +67,7 @@ export default function Chat() {
             
             <div className="chat container mx-auto max-w-[700px]">
                 <div className="flex flex-col">
-                    <h1 className="text-center py-3 font-bold text-6xl">
+                    <h1 className="text-center pt-6 pb-0 font-bold text-6xl">
                         Talk to Olive!
                     </h1>
                     <div className="messages flex-grow p-6">
