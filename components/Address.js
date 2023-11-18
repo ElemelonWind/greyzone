@@ -2,10 +2,28 @@ import { useState } from "react";
 
 export default function Address({ setAddress }) {
     const [formAddress, setFormAddress] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
-    const submit = (e) => {
+    const submit = async (e) => {
         e.preventDefault();
-        setAddress(formAddress);
+
+        // check address
+        const response = await fetch('/api/address', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ formAddress })
+        });
+
+        const data = await response.json();
+
+        if (response.status !== 200) {
+            setErrorMessage(data.message);
+            return;
+        }
+
+        setAddress(data.message);
     }
 
     return (
@@ -36,6 +54,9 @@ export default function Address({ setAddress }) {
                     SUBMIT
                     </button>
                 </form>
+                <p className="text-red-500 mt-3">
+                    {errorMessage}
+                </p>
             </div>
         </div>
     )
