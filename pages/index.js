@@ -1,8 +1,34 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
-    <div>
-      <h1>Greyzone</h1>
-      <p>Politics for Dummies</p>
+    <div className = "landing-page" id = "parent">
+      <div className = "landing-page-header">
+        <Image src = "/Logo_V2-Transparent.png" width = {300} height = {300} />
+      </div>
+
+      <div className = "landing-page-bg-wrapper">
+        <Image className = "landing-page-bg" src = "/backgroundVid.gif" width = {300} height = {300} />
+      </div>
+
+      <div className = "landing-page-h1">
+          <p>You only get one vote.</p>
+      </div>
+
+      <div className = "landing-page-h2">
+          <p className = "landing-page-h2-p">So make it count.</p>
+      </div>
+
+      <div className = "landing-page-link-group">
+        <div className = "landing-page-left-container">
+          <a className = "landing-page-left-link" href="/info">Find your representatives! </a>
+        </div>
+
+        <div className = "landing-page-right-container">
+          <a className = "landing-page-right-link" href="/chat"> Ask questions to our AI assistant!</a>
+        </div>
+      </div>
+
     </div>
   )
 }
