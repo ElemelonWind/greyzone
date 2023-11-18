@@ -1,25 +1,33 @@
 import Image from 'next/image'
-import Head from 'next/head'
-
 export default function Home() {
   return (
-    <div id="parent">
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta httpEquiv='cache-control' content='no-cache' />
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
-      </Head>
+    <div className = "landing-page" id = "parent">
+      <div className = "landing-page-header">
+        <Image src = "/Logo_V2-Transparent.png" width = {300} height = {300} />
+      </div>
 
-      <header id="landing-header">
-        <Image src="/Logo_V2-transparent.png" width={300} height={300} />
-      </header>
+      <div className = "landing-page-bg-wrapper">
+        <Image className = "landing-page-bg" src = "/backgroundVid.gif" width = {300} height = {300} />
+      </div>
 
-      <h1 className="landing-heading">landing-heading 1</h1>
-      <h2 className="landing-heading">landing-heading 2</h2>
+      <div className = "landing-page-h1">
+          <p>You only get one vote.</p>
+      </div>
 
-      <button className="button">Button</button>
-      <button className="button2">Button 2</button>
+      <div className = "landing-page-h2">
+          <p className = "landing-page-h2-p">So make it count.</p>
+      </div>
+
+      <div className = "landing-page-link-group">
+        <div className = "landing-page-left-container">
+          <a className = "landing-page-left-link" href="/info">Find your representatives! </a>
+        </div>
+
+        <div className = "landing-page-right-container">
+          <a className = "landing-page-right-link" href="/chat"> Ask questions to our AI assistant!</a>
+        </div>
+      </div>
+
     </div>
   )
 }

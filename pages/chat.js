@@ -5,7 +5,8 @@ import ScrollContainer from '@/components/ScrollContainer';
 export default function Chat() {
     const [inputValue, setInputValue] = useState('');
     const [chatLog, setChatLog] = useState([
-        { type: 'bot', message: 'Hi, I\'m Olive, your One-Zone chat assistant. How can I help you?'}
+        { type: 'bot', message: 'Hi, I\'m Olive, your One-Zone chat assistant. How can I help you?'},
+        { type: 'user', message: 'What is the meaning of life?'},
     ]);
     const [isLoading, setIsLoading] = useState(false);
 

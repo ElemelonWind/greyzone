@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     });
 
     const completion = await openai.chat.completions.create({
-      messages: [{ role: "user", content: "Turn this into a google search query:\n\n" + message + "\n\nOnly reply with the query." }],
+      messages: [{ role: "user", content: "Turn this into a google search query:\n\n" + message + "\n\nOnly reply with the query, with no quotations or special characters." }],
       model: "gpt-3.5-turbo",
     });
 
@@ -28,6 +28,8 @@ export default async function handler(req, res) {
     }
 
     const data = await response.json();
+
+    console.log(data)
     const url = data.items[0].link;
 
     const options = {
