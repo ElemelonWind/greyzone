@@ -157,4 +157,35 @@ a:hover, a:active {
     background-color: #677389;
 }
 
+.address-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #363B45;
+}
 
+.address-page div {
+    display: block;
+    color: white;
+}
+
+.address-page p {
+    font-size: 1.25rem;  
+    text-align: center; 
+}
+
+.address-page button {
+    margin: auto;
+    background-color: #9c554d;
+}
+
+.address-page button:hover {
+    background-color: #677389;
+}
+
+.address-page input {
+    margin: 10px auto;
+    display: block;
+    color: black;
+}
