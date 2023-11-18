@@ -38,18 +38,23 @@ html{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 999;
     padding: 1rem;
     display: inline;
+}
+
+.chat-container .landing-page-header {
+    padding: 0;
+    margin-left: 20px;
 }
 
 .landing-page-h1{
     font-size: 2rem;
     font-weight: 700;
     color: var(--default-white);
-    padding-top: 4.5rem;
     text-align: center;
     font-size: 4rem;
+    z-index: 999;
 }
 
 .landing-page-h2{
@@ -59,7 +64,9 @@ html{
     color: var(--default-yellow);
     width: min-content;
     margin:auto;
-
+    padding-top: 1rem;
+    text-align: center;
+    z-index: 999;
 }
 
 .landing-page-h2-p{
@@ -71,7 +78,15 @@ html{
     animation: 
         typing 1.5s steps(20, end),
         blink-caret .75s step-end infinite;
+    z-index: 999;
+    position: relative;
 }
+
+.landing-page-h1 p {
+    z-index: 999;
+    position: relative;
+}
+
 .landing-page-link-group{
     display: flex;
     justify-content: center;
@@ -123,12 +138,16 @@ a:hover, a:active {
     50% { border-color: orange; }
   }
 
+.chat-container {
+    height: 100vh;
+    background-color: #363B45;
+}
+
 .chat-page {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #363B45;
+    height: 75vh;
 }
 
 .chat-page h1 {
@@ -188,4 +207,24 @@ a:hover, a:active {
     margin: 10px auto;
     display: block;
     color: black;
+}
+
+.landing-page-bg {
+    z-index: 0;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.absolute {
+    display: block;
 }

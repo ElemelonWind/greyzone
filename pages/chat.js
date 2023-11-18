@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TypingAnimation from '@/components/TypingAnimation';
 import ScrollContainer from '@/components/ScrollContainer';
+import Image from 'next/image';
 
 export default function Chat() {
     const [inputValue, setInputValue] = useState('');
@@ -55,7 +56,15 @@ export default function Chat() {
     ))
 
     return (
-        <div className="chat-page">
+        <div className="chat-container">
+        <div className = "landing-page-header" onClick={
+            () => window.location.href = "/"
+        } style={{cursor: "pointer"}}
+        >
+            <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250} />
+        </div>
+        <div className="chat-page mt-5">
+            
             <div className="chat container mx-auto max-w-[700px]">
                 <div className="flex flex-col">
                     <h1 className="text-center py-3 font-bold text-6xl">
@@ -90,6 +99,7 @@ export default function Chat() {
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

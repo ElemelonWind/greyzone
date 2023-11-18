@@ -9,8 +9,9 @@ export default function Home() {
       <div className = "landing-page-bg-wrapper">
         <Image className = "landing-page-bg" src = "/backgroundVid.gif" width = {300} height = {300} />
       </div>
-
-      <div className = "landing-page-h1">
+      <div className="landing-container">
+    <div className="absolute">
+    <div className = "landing-page-h1">
           <p>You only get one vote.</p>
       </div>
 
@@ -28,6 +29,8 @@ export default function Home() {
         </div>
       </div>
 
+    </div>
+      </div>
     </div>
   )
 }
