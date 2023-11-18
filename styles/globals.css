@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.chat-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #363B45;
+}
+
+h1 {
+    -webkit-text-stroke-width: 2px;
+    background: -webkit-linear-gradient(#e9604b, #6E778A 75%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #363B45;
+}
+
+.chat {
+    width: 90vw;
+    border-radius: 10px;
+}
+
+.messages {
+    max-height: 70vh;
+}
+
+.chat button {
+    margin: 5px;
+    background-color: #9c554d;
+}
+
+.chat button:hover {
+    background-color: #677389;
+}
