@@ -46,6 +46,7 @@ export default function Info() {
 
     return (
         <div className="info-page" style={{backgroundColor: "#2C2C2C"}}>
+            <title>OneVote</title>
             <div className = "image" >
         <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250}
         onClick={

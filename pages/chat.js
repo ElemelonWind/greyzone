@@ -57,6 +57,7 @@ export default function Chat() {
 
     return (
         <div className="chat-container">
+            <title>OneVote</title>
             <div className = "landing-page-header">
                 <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250}
                 onClick={

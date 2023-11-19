@@ -28,13 +28,15 @@ export default function Address({ setAddress }) {
 
     return (
         <div className="address-page">
+            <title>OneVote</title>
             <div>
                 <p>
                     In order to display the correct information for your area, we need to know your address.
                 </p>
-                <p>
+                <h3 className="text-center">
                     If you are not comfortable sharing your address, you can still use our chat feature!
-                </p>
+                </h3>
+                <br></br>
                 <form>
                     <input
                     className="w-1/2 px-4 py-3 rounded-lg"
