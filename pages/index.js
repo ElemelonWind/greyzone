@@ -15,13 +15,13 @@ export default function Home() {
    <div className="absolute">
    <div className = "landing-page-h1">
          <p>You only get
-           <span class="test2"> O</span>
-           <span class="test1">n</span>
-           <span class="test2">e</span>
-           <span class="test1">V</span>
-           <span class="test2">o</span>
-           <span class="test1">t</span>
-           <span class="test2">e</span>
+           <span className="test2"> O</span>
+           <span className="test1">n</span>
+           <span className="test2">e</span>
+           <span className="test1">V</span>
+           <span className="test2">o</span>
+           <span className="test1">t</span>
+           <span className="test2">e</span>
            .
          </p>
         
