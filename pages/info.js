@@ -54,20 +54,16 @@ export default function Info() {
             }
         } style={{cursor: "pointer"}} />
       </div>
-            <h1 className="title">VOTER PAGE</h1>
+            <h1 className="title">Voter Information</h1>
             <div className="candidates2">
                 <div className="containerChild">
                 <div className="candidates">
                     <h2 className="text"> Meet Your Representatives </h2>
                     {voterData.map((rep, index) => (
-                <div key={index}>
-                    <h1 className="position">{rep.title}</h1>
-                    {rep.officials.map((official, ind) => (
-                        <div key={ind}>
-                            <a href={official.urls[0]} className="name">{official.name} - {official.party}</a>
-                        </div>
-                    ))}
-                </div>
+                <a key={index} href={rep.url} target="_blank">
+                    <p className="position">{rep.name} - {rep.party}</p>
+                    <p className="name"> {rep.title} </p>
+                </a>
             ))} 
                 </div>
 
@@ -78,7 +74,7 @@ export default function Info() {
                 <div className="containerChild">
                 <div className="current-elections">
                     <h2 className="text"> Elections in Your Area </h2>
-                    <p> No upcoming elections in your area </p>
+                    <p className="text-center mt-5"> No upcoming elections in your area </p>
                 </div>
                 {/* <div class="to-do">
                     <h2 class="text"> TO-DO </h2>

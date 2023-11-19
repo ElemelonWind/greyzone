@@ -24,21 +24,16 @@ export default async function handler(req, res) {
         for (let i = 0; i < offices.length; i++) {
             let office = offices[i];
             let officialIndices = office.officialIndices;
-            let rep = {
-                title: office.name,
-                officials: []
-            };
 
             for (let j = 0; j < officialIndices.length; j++) {
                 let official = officials[officialIndices[j]];
-                rep.officials.push({
+                reps.push({
+                    title: office.name,
                     name: official.name,
                     party: official.party,
-                    urls: official.urls,
-                });
+                    url: official.urls[0],
+                })
             }
-
-            reps.push(rep);
         }
 
         res.status(200).json({ message: reps });

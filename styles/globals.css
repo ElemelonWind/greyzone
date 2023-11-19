@@ -121,11 +121,6 @@ html{
     border-radius: 10px;
 }
 
-a:hover, a:active {
-    color: var(--default-white);
-    padding: 1.5rem;
-    font-size: 1.3rem;
-  }
 
 @keyframes typing {
     from { width: 0 }
@@ -228,8 +223,9 @@ a:hover, a:active {
 .absolute {
     display: block;
 }
-
-<<<<<<< HEAD
+.message-background {
+    background-color: #6E778A;
+}
 
 .info-page .container2 {
     display: inline-block;
@@ -253,7 +249,7 @@ a:hover, a:active {
   .info-page  .title {
     text-align: center;
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 50px;
     float: center;
     font-weight: 700;
   }
@@ -382,8 +378,3 @@ a:hover, a:active {
     font-size: 20px;
     font-weight: 700;
   }
-=======
-.message-background {
-    background-color: #6E778A;
-}
->>>>>>> 68cc270434dc46226993eef8775ab79c7f0ccaf5
