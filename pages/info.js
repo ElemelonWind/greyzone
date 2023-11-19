@@ -59,7 +59,7 @@ export default function Info() {
             <div className="candidates2">
                 <div className="containerChild">
                 <div className="candidates">
-                    <h2 className="text"> Meet Your Representatives </h2>
+                    <h2 className="text"> Meet Your Government Officials </h2>
                     {voterData.map((rep, index) => (
                 <a key={index} href={rep.url} target="_blank">
                     <p className="position">{rep.name} - {rep.party}</p>
