@@ -57,23 +57,25 @@ export default function Chat() {
 
     return (
         <div className="chat-container">
-        <div className = "landing-page-header" onClick={
-            () => window.location.href = "/"
-        } style={{cursor: "pointer"}}
+        <div className = "landing-page-header" 
         >
-            <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250} />
+            <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250}
+            onClick={
+                () => window.location.href = "/"
+            } style={{cursor: "pointer"}} />
         </div>
         <div className="chat-page mt-5">
             
             <div className="chat container mx-auto max-w-[700px]">
-                <div className="flex flex-col">
-                    <h1 className="text-center py-3 font-bold text-6xl">
+            <h1 className="text-center py-3 font-bold text-6xl">
                         Talk to Olive!
                     </h1>
+                <div className="flex flex-col">
+                    
                     <div className="messages flex-grow p-6">
-                    <div className="flex flex-col space-y-4"
-                        style={{ height: '65vh' }}
-                    >
+                        <div className="flex flex-col space-y-4"
+                            style={{ height: '45vh' }}
+                        >
                         <ScrollContainer children={messages} />
                         { isLoading &&
                             <div key={chatLog.length} className="flex justify-start">
