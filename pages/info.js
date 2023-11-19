@@ -77,14 +77,17 @@ export default function Info() {
                     <h2 className="text"> Elections in Your Area </h2>
                     <p className="text-center mt-5"> No upcoming elections in your area </p>
                 </div>
-                {/* <div class="to-do">
-                    <h2 class="text"> TO-DO </h2>
-                    <p class="text"> <a href="#"> &#x2705 Register to vote! </a> </p>
-                    <p class="text"> <a href="#"> &#x2705 Vote by November 3, 2024! </a> </p>
-                </div> */}
+                      <div class="more-info">
+        <h2 class="text"> MORE INFORMATION </h2>
+        <a href="https://emoji.gg/emoji/4069_gray_square"><img src="https://cdn3.emoji.gg/emojis/4069_gray_square.png" width="16px" height="16px" margin="10px" alt="gray_square"></a>
+        <p class="text" style = "display: inline"> <a href="https://www.usa.gov/register-to-vote"> Learn how to register to vote! </a> </p>
+        <br>
+        <a href="https://emoji.gg/emoji/4069_gray_square"><img src="https://cdn3.emoji.gg/emojis/4069_gray_square.png" width="16px" height="16px" margin="10px" alt="gray_square"></a>
+        <p class="text" style = "display: inline"> <a href="https://www.usa.gov/how-to-vote"> Get more information about voting here!  </a> </p>
+      </div>
                 </div>
             </div>
-            
+
 
 
 
