@@ -57,49 +57,50 @@ export default function Chat() {
 
     return (
         <div className="chat-container">
-        <div className = "landing-page-header" onClick={
-            () => window.location.href = "/"
-        } style={{cursor: "pointer"}}
-        >
-            <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250} />
-        </div>
-        <div className="chat-page mt-5">
-            
-            <div className="chat container mx-auto max-w-[700px]">
-                <div className="flex flex-col">
-                    <h1 className="text-center pt-6 pb-0 font-bold text-6xl">
-                        Talk to Olive!
-                    </h1>
-                    <div className="messages flex-grow p-6">
-                    <div className="flex flex-col space-y-4"
-                        style={{ height: '65vh' }}
-                    >
-                        <ScrollContainer children={messages} />
-                        { isLoading &&
-                            <div key={chatLog.length} className="flex justify-start">
-                                <div className="bg-gray-800 rounded-lg p-4 text-white max-w-sm">
-                                    <TypingAnimation />
+            <div className = "landing-page-header">
+                <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250}
+                onClick={
+                    () => window.location.href = "/"
+                } style={{cursor: "pointer"}} />
+            </div>
+            <div className="chat-page mt-5">
+                <div className="chat container mx-auto max-w-[700px]">
+                    <div className="flex flex-col">
+                        <h1 className="text-center pt-6 pb-0 font-bold text-6xl">
+                            Talk to Olive!
+                        </h1>
+                        <div className="flex flex-col">
+                            <div className="messages flex-grow p-6">
+                                <div className="flex flex-col space-y-4"
+                                    style={{ height: '45vh' }}
+                                >
+                                <ScrollContainer children={messages} />
+                                { isLoading &&
+                                    <div key={chatLog.length} className="flex justify-start">
+                                        <div className="bg-gray-800 rounded-lg p-4 text-white max-w-sm">
+                                            <TypingAnimation />
+                                        </div>
+                                    </div>
+                                }
                                 </div>
                             </div>
-                        }
+                            <form onSubmit={handleSubmit} className="flex-none p-6">
+                                <div className="flex rounded-lg border border-gray-700 bg-gray-800">  
+                                    <input type="text" className="flex-grow px-4 py-3 bg-transparent 
+                                        text-white focus:outline-none" placeholder="Type your message..." 
+                                        value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+                                        
+                                    <button type="submit" className="rounded-lg px-4 py-2 
+                                        text-white font-semibold focus:outline-none
+                                        transition-colors duration-300">
+                                        Send
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <form onSubmit={handleSubmit} className="flex-none p-6">
-                        <div className="flex rounded-lg border border-gray-700 bg-gray-800">  
-                            <input type="text" className="flex-grow px-4 py-3 bg-transparent 
-                                text-white focus:outline-none" placeholder="Type your message..." 
-                                value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-                                
-                            <button type="submit" className="rounded-lg px-4 py-2 
-                                text-white font-semibold focus:outline-none
-                                transition-colors duration-300">
-                                Send
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
-        </div>
         </div>
     )
 }
