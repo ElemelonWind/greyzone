@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Chat() {
     const [inputValue, setInputValue] = useState('');
     const [chatLog, setChatLog] = useState([
-        { type: 'bot', message: 'Hi, I\'m Olive, your One-Vote chat assistant. How can I help you?'},
+        { type: 'bot', message: 'Hi, I\'m Olive, your OneVote chat assistant. How can I help you?'},
     ]);
     const [isLoading, setIsLoading] = useState(false);
 

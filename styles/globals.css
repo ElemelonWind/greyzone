@@ -97,6 +97,7 @@ html{
 
 .landing-page-left-container{
     margin-right: 2rem;
+    transition: 0.7s;
     z-index: 2;
 }
 
@@ -104,12 +105,13 @@ html{
     background-color: var(--default-red);
     color: white;
     padding: 1rem;
-    transition: 0.5s;
+    transition: 0.7s;
     border-radius: 10px;
 }
 
 .landing-page-right-container{
     margin-left: 2rem;
+    transition: 0.7s;
     z-index: 2;
 }
 
@@ -117,8 +119,12 @@ html{
     background-color: var(--default-blue);
     color: white;
     padding: 1rem;
-    transition: 0.7s;
     border-radius: 10px;
+}
+
+.landing-page-left-container:hover, .landing-page-right-container:hover{
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 
