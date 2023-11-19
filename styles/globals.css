@@ -294,6 +294,7 @@ html{
     color: #FFFFFF;
     font-size: 30px;
     font-weight: 700;
+    text-decoration: underline;
   }
 
   .info-page  a {
@@ -410,6 +411,12 @@ html{
   }
 
   .info-page .position {
+    text-align: center;
+    margin-top: 15px;
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .info-page .name {
+    text-align: center;
   }

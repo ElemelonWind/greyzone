@@ -31,7 +31,7 @@ export default async function handler(req, res) {
                     title: office.name,
                     name: official.name,
                     party: official.party,
-                    url: official.urls[0],
+                    url: official.urls? official.urls[0] : null,
                 })
             }
         }
