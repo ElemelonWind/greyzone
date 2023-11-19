@@ -444,3 +444,7 @@ html{
   .info-page .name {
     text-align: center;
   }
+
+  li {
+    list-style: disc;
+  }
