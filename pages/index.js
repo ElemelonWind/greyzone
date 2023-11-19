@@ -2,6 +2,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className = "landing-page" id = "parent">
+      <title>OneVote</title>
       <div className = "landing-page-header">
         <Image src = "/Logo_V2-Transparent.png" width = {300} height = {300} />
       </div>
