@@ -43,7 +43,7 @@ html{
     display: inline;
 }
 
-.chat-container .landing-page-header {
+.chat-container .landing-page-header, .info-page .landing-page-header {
     padding: 0;
     margin-left: 20px;
 }
@@ -148,11 +148,6 @@ html{
    font-weight: 700;
 }
 
-a:hover, a:active {
-    color: var(--default-white);
-    padding: 1.5rem;
-    font-size: 1.3rem;
-  }
 
 @keyframes typing {
     from { width: 0 }
@@ -255,7 +250,158 @@ a:hover, a:active {
 .absolute {
     display: block;
 }
-
 .message-background {
     background-color: #6E778A;
 }
+
+.info-page .container2 {
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 1.5%;
+  }
+
+  .info-page  .containerChild {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1.5vh;
+    padding-right: 1vw;
+    padding-bottom: 1.5vh;
+    padding-left: 1vw;
+    
+    float: left;
+  }
+
+
+  .info-page  .title {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    float: center;
+    font-weight: 700;
+  }
+
+  .info-page  .text {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .info-page  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .info-page  a:hover {
+    color: #F6C944;
+    transition: 0.2s;
+  }
+
+  .info-page  .candidates {
+    margin-bottom: 3%; 
+    display: inline-block;
+    width: 60vw;
+    height: 61vh;
+    padding: 5px;
+    border-style: double;
+    border-radius: 10px;
+    border-color: #76B5C5;
+    border-width: thick;
+    background-color: #2C2C2C;
+    float: left;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .info-page .candidates:hover {
+    background-color: #76B5C5;
+    border-color: #2C2C2C;
+    transition: 0.2s;
+  }
+
+  .info-page   .current-elections {
+    margin-bottom: 6%; 
+    padding: 5px;
+    width: 29vw;
+    height: 61vh;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: thick;
+    border-style: double;
+    border-color: #EF8B7C;
+    background-color: #2C2C2C;
+    overflow-y: auto;
+  }
+
+  .info-page  .current-elections:hover {
+    background-color: #EF8B7C;
+    border-color: #2C2C2C;
+    transition: 0.2s;
+  }
+
+  .info-page .polls {
+    padding: 5px;
+    display: inline-block;
+    width: 60vw;
+    height: 19vh;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #CC482B;
+    border-width: thick;
+    background-color: #2C2C2C;
+    padding: 20px;
+    float: inherit;
+    overflow-y: auto;
+  }
+
+  .info-page  .polls:hover {
+    background-color: #CC482B;
+    border-color: #2C2C2C;
+    transition: 0.2s;
+  }
+
+  .info-page  .to-do {
+    width: 29vw;
+    height: 19vh;
+    padding: 5px;
+    border-style: double;
+    border-radius: 10px;
+    border-color: #057485;
+    border-width: thick;
+    background-color: #2C2C2C;
+    padding: 20px;
+    overflow-y: auto;
+    float: inherit;
+  }
+
+  .info-page  .to-do:hover {
+    background-color: #057485;
+    border-color: #2C2C2C;
+    transition: 0.2s;
+  }
+
+
+  .info-page .voting-page-p {
+    font-size: 20px;
+  }
+
+  .info-page  .image {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+.info-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+
+  .info-page .position {
+    font-size: 20px;
+    font-weight: 700;
+  }
