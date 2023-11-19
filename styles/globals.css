@@ -39,7 +39,7 @@ html{
     top: 0;
     left: 0;
     z-index: 999;
-    padding: 1rem;
+    padding: 0.1rem;
     display: inline;
 }
 
@@ -229,6 +229,7 @@ a:hover, a:active {
     display: block;
 }
 
+<<<<<<< HEAD
 
 .info-page .container2 {
     display: inline-block;
@@ -381,3 +382,8 @@ a:hover, a:active {
     font-size: 20px;
     font-weight: 700;
   }
+=======
+.message-background {
+    background-color: #6E778A;
+}
+>>>>>>> 68cc270434dc46226993eef8775ab79c7f0ccaf5

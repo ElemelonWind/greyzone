@@ -1,40 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Inspiration
+Our team noticed that UMich students, and college students as a whole, are woefully unknowledgeable about both local and national politics. We asked almost 40 students about their voting plans for the upcoming 2024 presidential elections - Only 3 even knew the candidates who were running. Clearly, there's a disconnect here. So, what can we do to bridge that gap?
+## What it does
+The goal of our website is to make it extremely easy for anyone to get involved in the political process. There's two major parts: The first is a voter page that displays representative info, nearby polling areas, and upcoming elections, depending on a user-inputted address. 
 
-## Getting Started
+The star of the show is the AI chatbot tool that allows users can use to ask questions about whatever they wish - candidate information, recent news, and more. We knew that it'd basically be impossible to store every little piece of information a user wants directly on the website, so this functionality solves that problem by allowing us to fine-tune the experience to every user.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## How we built it
+We used primarily Next.js as well as a whole host of external APIs to get election information. The product is pretty lightweight and only uses what's expressly necessary. 
+## Challenges we ran into
+The biggest challenges were probably with the APIs - There was a never-ending onslaught of errors and unexpected bugs that we needed to sort through before we could finish building the website. Nonetheless, we managed to push through and get it done.
+## Accomplishments that we're proud of
+The biggest one would probably be the keyword extraction, followed soon after by the google search integration to get the voting information page done. We're also pretty proud of the website's design as a whole - Simple and straight to the point.
+## What we learned
+We learned a lot about integrating external APIs into our products - the keyword extraction in particular was a pretty big challenge. In addition, 3 members in our team were fairly new to frontend development, so being able to design and build web pages from the ground up was a whole new experience that taught us a whole new set of skills.
+## What's next for OneVote
+Honestly, nothing much. We want to keep this website as simple as possible: A one stop shop for students to learn about local politics. We don't want to overburden users with too many unnecessary features.
