@@ -77,11 +77,24 @@ export default function Info() {
                     <h2 className="text"> Elections in Your Area </h2>
                     <p className="text-center mt-5"> No upcoming elections in your area </p>
                 </div>
-                {/* <div class="to-do">
-                    <h2 class="text"> TO-DO </h2>
-                    <p class="text"> <a href="#"> &#x2705 Register to vote! </a> </p>
-                    <p class="text"> <a href="#"> &#x2705 Vote by November 3, 2024! </a> </p>
-                </div> */}
+                 <div className="to-do">
+
+                    <h2 className="text"> More Information </h2>
+                    
+                    <ul className="ml-5 mt-3">
+                        <li>
+                        <a href="https://www.usa.gov/register-to-vote">Learn how to register to vote!</a>
+                        </li>
+                        <li>
+                        <a href="https://www.usa.gov/how-to-vote">Get more voting information here!</a>
+                        </li>
+                    </ul>
+
+            
+                    {/*}  <h2 class="text"> TO-DO </h2>
+                        <p class="text"> <a href="#"> &#x2705 Register to vote! </a> </p>
+                        <p class="text"> <a href="#"> &#x2705 Vote by November 3, 2024! </a> </p> */}
+                    </div> 
                 </div>
             </div>
             
