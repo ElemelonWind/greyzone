@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image"
 
 export default function Address({ setAddress }) {
     const [formAddress, setFormAddress] = useState("");
@@ -27,7 +28,15 @@ export default function Address({ setAddress }) {
     }
 
     return (
+        <>
+        <div className = "landing-page-header">
+                <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250}
+                onClick={
+                    () => window.location.href = "/"
+                } style={{cursor: "pointer"}} />
+            </div>
         <div className="address-page">
+            
             <title>OneVote</title>
             <div>
                 <p>
@@ -61,5 +70,6 @@ export default function Address({ setAddress }) {
                 </p>
             </div>
         </div>
+        </>
     )
 }

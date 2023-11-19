@@ -4,7 +4,7 @@ export default function Home() {
     <div className = "landing-page" id = "parent">
       <title>OneVote</title>
       <div className = "landing-page-header">
-        <Image src = "/Logo_V2-Transparent.png" width = {300} height = {300} />
+        <Image src = "/Logo_V2-Transparent.png" width = {250} height = {250} />
       </div>
 
 

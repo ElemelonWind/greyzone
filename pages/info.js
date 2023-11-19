@@ -55,7 +55,12 @@ export default function Info() {
             }
         } style={{cursor: "pointer"}} />
       </div>
+      <br></br>
+      <br></br>
+
             <h1 className="title">Voter Information</h1>
+            <h1 className="minitext">Click the representatives or elections for more info!</h1>
+
             <div className="candidates2">
                 <div className="containerChild">
                 <div className="candidates">
